@@ -1,0 +1,136 @@
+@import 'typography.scss';
+@import 'colors.scss';
+@import 'screens.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    .main_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        #box {
+            background-color: $color-navy;
+            width: 100%;
+            height: 60px;
+            padding: .5rem .5rem;
+            color: white;
+            outline: none;
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+            appearance: none;
+            resize: none;
+        }
+
+        .container {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.3rem;
+
+            p {
+                text-align: center;
+                color: $color-text-grey-light;
+                font-size: 0.75*$base-font-size;
+            }
+
+        }
+
+    }
+}
+
+.stars_container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.stars_container input {
+    display: none;
+}
+
+.stars_container label {
+    cursor: pointer;
+    font-size: 30px;
+    color: #d9cb7b;
+    transition: 0.3s;
+}
+
+.stars_container label:hover,
+.stars_container input:checked~label {
+    color: #ffcc00;
+}
+
+.stars_container label:hover,
+.stars_container input:checked~label {
+    color: #ffcc00;
+}
+#submitBtn {
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    padding: .6rem 1.3rem;
+    background: #1E1772;
+    color: white;
+    border-radius: 0.625rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+
+    &:hover {
+        box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.5);
+        translate: 1px 2px;
+    }
+
+}
+
+.thankyou_section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    width: 350px;
+    margin: auto;
+    padding: 0 1.5rem;
+
+    #starText {
+        font-weight: 500;
+        color: $color-navy;
+        font-size: 1rem;
+    }
+
+    h3 {
+        color: $color-navy;
+    }
+
+    p {
+        color: $color-text-grey-light;
+        font-size: 0.75*$base-font-size;
+    }
+
+}
+
+.hidden {
+    display: none;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}

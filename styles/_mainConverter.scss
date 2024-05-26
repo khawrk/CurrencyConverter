@@ -1,0 +1,107 @@
+@import 'typography.scss';
+@import 'colors.scss';
+@import 'screens.scss';
+
+#top-section {
+    div {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        h1 {
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: $color-navy;
+        }
+    }
+}
+
+
+#converterContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #currency-selector {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 1.5rem;
+
+        select {
+            background-image: none;
+            appearance: none;
+            border-radius: 1.25rem;
+            background: #1E1772;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+            width: 100px;
+            height: 40px;
+            color: $color-white;
+            cursor: pointer;
+            outline: 0;
+            font-weight: 500;
+            padding-left: 1rem;
+            padding-right: 0.5rem;
+        }
+    }
+
+    #amountArea {
+        margin-bottom: 1.5rem;
+        width: 100%;
+
+        label {
+            color: $color-text-grey-light;
+            font-size: 0.7*$base-font-size;
+            padding-bottom: 1rem;
+        }
+
+        input {
+            width: 100%;
+            height: 45px;
+            border-radius: 0.625rem;
+            background: $color-navy;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+            margin-top: 0.2rem;
+            color: $color-white;
+            padding-left: 1rem;
+
+            &::-webkit-inner-spin-button,
+            ::-webkit-outer-spin-button {
+                appearance: none;
+            }
+
+            &::placeholder {
+                color: $color-text-grey-light;
+            }
+        }
+    }
+
+    #converter {
+        width: 90px;
+        height: 30px;
+        border-radius: 1.25rem;
+        border: 1px solid #1E1772;
+        background: #FFF;
+        box-shadow: 0px 1px 5.3px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        font-weight: bold;
+        color: $color-navy;
+        transition: background-color 2s, box-shadow 2s linear;
+        margin-bottom: 1rem;
+
+        &:hover {
+            background-color: $color-grey-background;
+            translate: 1px 2px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        }
+
+    }
+
+    #result {
+        color: $color-navy;
+        margin-bottom: 0.5rem;
+    }
+
+}

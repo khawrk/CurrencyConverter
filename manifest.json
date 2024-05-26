@@ -1,0 +1,10 @@
+{
+    "name": "Best Currency Converter",
+    "description": "The most simplest currency converter extension for everyone!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "./images/Logo-16.png"
+    }
+}
